@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        SchemeDefinition definition = SchemeFactory.fromFile("/Users/ex3ndr/actor-api-schema/actor.json");
+        SchemeDefinition definition = SchemeFactory.fromFile("/Users/ex3ndr/Develop/actor-api-schema/actor.json");
 //        SchemeDefinition encryptedDefinition = SchemeFactory.fromFile("/Users/ex3ndr/Documents/actor_encrypted.json");
 
 //        String destJava ="/Users/ex3ndr/Develop/actor-api-schema/java/";
@@ -30,6 +30,6 @@ public class Main {
         // StructGenerator.generate(encryptedDefinition, "/Users/ex3ndr/Documents/actor/java/", JavaConfig.PACKAGE + ".encrypted");
 
 //        ProtoBufGenerator.generate(encryptedDefinition, "/Users/ex3ndr/actor-doc/actor_encrypted.proto");
-        ProtoBufGenerator.generate(definition, "/Users/ex3ndr/actor-api-schema/actor.proto");
+        ProtoBufGenerator.generate(definition, "/Users/ex3ndr/Develop/actor-api-schema/actor.proto");
     }
 }

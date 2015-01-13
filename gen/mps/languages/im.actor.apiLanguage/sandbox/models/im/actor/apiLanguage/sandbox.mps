@@ -680,72 +680,68 @@
           <property name="id" nameId="tsp6.2348480312264710768" value="3" />
         </node>
       </node>
-      <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Struct" typeId="tsp6.2348480312264231121" id="1769186940501808347" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Phone" />
-        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocComment" typeId="tsp6.773119248390047284" id="1769186940501810215" nodeInfo="ng">
-          <property name="content" nameId="tsp6.773119248390047379" value="Extendend phone information" />
+      <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Enum" typeId="tsp6.2348480312264620144" id="255031709445674860" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="RecordType" />
+        <node role="attributes" roleId="tsp6.2348480312264712169" type="tsp6.EnumAttribute" typeId="tsp6.2348480312264710733" id="255031709445674862" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="Phone" />
+          <property name="id" nameId="tsp6.2348480312264710768" value="1" />
         </node>
-        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940501811992" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="Phone number in international format" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940501808427" resolveInfo="phone" />
-        </node>
-        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940501812000" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="Title of phone" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940501808434" resolveInfo="phoneTitle" />
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502077870" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="1" />
-          <property name="name" nameId="tpck.1169194664001" value="id" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502077881" nodeInfo="ng" />
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502077884" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="2" />
-          <property name="name" nameId="tpck.1169194664001" value="accessHash" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int64" typeId="tsp6.2348480312264231184" id="1769186940502077894" nodeInfo="ng" />
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940501808427" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="3" />
-          <property name="name" nameId="tpck.1169194664001" value="phone" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int64" typeId="tsp6.2348480312264231184" id="1769186940501808431" nodeInfo="ng" />
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940501808434" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="4" />
-          <property name="name" nameId="tpck.1169194664001" value="phoneTitle" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.String" typeId="tsp6.2348480312264231195" id="1769186940501808440" nodeInfo="ng" />
+        <node role="attributes" roleId="tsp6.2348480312264712169" type="tsp6.EnumAttribute" typeId="tsp6.2348480312264710733" id="255031709445675028" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="Email" />
+          <property name="id" nameId="tsp6.2348480312264710768" value="2" />
         </node>
       </node>
-      <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Struct" typeId="tsp6.2348480312264231121" id="1769186940501814037" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Email" />
-        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocComment" typeId="tsp6.773119248390047284" id="1769186940501814143" nodeInfo="ng">
-          <property name="content" nameId="tsp6.773119248390047379" value="Extendend email information" />
+      <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Struct" typeId="tsp6.2348480312264231121" id="255031709445643808" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="ContactRecord" />
+        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocComment" typeId="tsp6.773119248390047284" id="255031709445644109" nodeInfo="ng">
+          <property name="content" nameId="tsp6.773119248390047379" value="Contact information of user" />
         </node>
-        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940501814149" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="Email" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940501814125" resolveInfo="email" />
+        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="255031709445646105" nodeInfo="ng">
+          <property name="description" nameId="tsp6.773119248390080030" value="Unique id of record" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="255031709445644021" resolveInfo="id" />
         </node>
-        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940501814157" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="Descruption of email" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940501814132" resolveInfo="emailTitle" />
+        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="255031709445646113" nodeInfo="ng">
+          <property name="description" nameId="tsp6.773119248390080030" value="Access hash of record" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="255031709445644028" resolveInfo="accessHash" />
         </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502079795" nodeInfo="ng">
+        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="255031709445646123" nodeInfo="ng">
+          <property name="description" nameId="tsp6.773119248390080030" value="Type of record" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="255031709445644068" resolveInfo="recordType" />
+        </node>
+        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="255031709445646135" nodeInfo="ng">
+          <property name="description" nameId="tsp6.773119248390080030" value="Record data" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="255031709445644079" resolveInfo="record" />
+        </node>
+        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="255031709445646149" nodeInfo="ng">
+          <property name="description" nameId="tsp6.773119248390080030" value="Record title" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="255031709445644092" resolveInfo="title" />
+        </node>
+        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="255031709445644021" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
           <property name="name" nameId="tpck.1169194664001" value="id" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502079803" nodeInfo="ng" />
+          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="255031709445644025" nodeInfo="ng" />
         </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502079806" nodeInfo="ng">
+        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="255031709445644028" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="2" />
           <property name="name" nameId="tpck.1169194664001" value="accessHash" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int64" typeId="tsp6.2348480312264231184" id="1769186940502079816" nodeInfo="ng" />
+          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int64" typeId="tsp6.2348480312264231184" id="255031709445644034" nodeInfo="ng" />
         </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940501814125" nodeInfo="ng">
+        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="255031709445644068" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="3" />
-          <property name="name" nameId="tpck.1169194664001" value="email" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.String" typeId="tsp6.2348480312264231195" id="1769186940501814129" nodeInfo="ng" />
+          <property name="name" nameId="tpck.1169194664001" value="recordType" />
+          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.EnumType" typeId="tsp6.803735062395368411" id="255031709445676963" nodeInfo="ng">
+            <link role="struct" roleId="tsp6.803735062395368531" targetNodeId="255031709445674860" resolveInfo="RecordType" />
+          </node>
         </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940501814132" nodeInfo="ng">
+        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="255031709445644079" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="4" />
-          <property name="name" nameId="tpck.1169194664001" value="emailTitle" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.String" typeId="tsp6.2348480312264231195" id="1769186940501814138" nodeInfo="ng" />
+          <property name="name" nameId="tpck.1169194664001" value="record" />
+          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.String" typeId="tsp6.2348480312264231195" id="255031709445644089" nodeInfo="ng" />
+        </node>
+        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="255031709445644092" nodeInfo="ng">
+          <property name="id" nameId="tsp6.2348480312264746197" value="5" />
+          <property name="name" nameId="tpck.1169194664001" value="title" />
+          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.String" typeId="tsp6.2348480312264231195" id="255031709445644104" nodeInfo="ng" />
         </node>
       </node>
       <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Struct" typeId="tsp6.2348480312264231121" id="803735062395368173" nodeInfo="ng">
@@ -786,12 +782,8 @@
           <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="803735062395511152" resolveInfo="avatar" />
         </node>
         <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940501825272" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="phones of user" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940501817724" resolveInfo="phones" />
-        </node>
-        <node role="docs" roleId="tsp6.773119248390105235" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940501825296" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="emails of user" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940501817764" resolveInfo="emails" />
+          <property name="description" nameId="tsp6.773119248390080030" value="contacts of user" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940501817724" resolveInfo="contacts" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="803735062395368232" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
@@ -847,16 +839,9 @@
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940501817724" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="9" />
-          <property name="name" nameId="tpck.1169194664001" value="phones" />
+          <property name="name" nameId="tpck.1169194664001" value="contacts" />
           <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.List" typeId="tsp6.2348480312264232754" id="1769186940501817755" nodeInfo="ng">
             <node role="type" roleId="tsp6.803735062395365470" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502087432" nodeInfo="ng" />
-          </node>
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940501817764" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="10" />
-          <property name="name" nameId="tpck.1169194664001" value="emails" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.List" typeId="tsp6.2348480312264232754" id="1769186940501817791" nodeInfo="ng">
-            <node role="type" roleId="tsp6.803735062395365470" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502087436" nodeInfo="ng" />
           </node>
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502053985" nodeInfo="ng">
@@ -994,17 +979,17 @@
         </node>
       </node>
       <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Update" typeId="tsp6.4689615199751283321" id="1769186940502010469" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="UserPhoneAdded" />
+        <property name="name" nameId="tpck.1169194664001" value="UserContactAdded" />
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocComment" typeId="tsp6.773119248390047284" id="1769186940502023242" nodeInfo="ng">
-          <property name="content" nameId="tsp6.773119248390047379" value="Update about phone added to user" />
+          <property name="content" nameId="tsp6.773119248390047379" value="Update about contact record added to user" />
         </node>
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502025115" nodeInfo="ng">
           <property name="description" nameId="tsp6.773119248390080030" value="user's id" />
           <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502010589" resolveInfo="uid" />
         </node>
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502025123" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="added phone id" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502010596" resolveInfo="phoneId" />
+          <property name="description" nameId="tsp6.773119248390080030" value="added contact record id" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502010596" resolveInfo="contactId" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502010589" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
@@ -1013,7 +998,7 @@
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502010596" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="2" />
-          <property name="name" nameId="tpck.1169194664001" value="phoneId" />
+          <property name="name" nameId="tpck.1169194664001" value="contactId" />
           <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502089342" nodeInfo="ng" />
         </node>
         <node role="header" roleId="tsp6.4689615199750927382" type="tsp6.HeaderKey" typeId="tsp6.4689615199750888590" id="1769186940502010470" nodeInfo="ng">
@@ -1021,17 +1006,17 @@
         </node>
       </node>
       <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Update" typeId="tsp6.4689615199751283321" id="1769186940502012571" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="UserPhoneRemoved" />
+        <property name="name" nameId="tpck.1169194664001" value="UserContactRemoved" />
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocComment" typeId="tsp6.773119248390047284" id="1769186940502027011" nodeInfo="ng">
-          <property name="content" nameId="tsp6.773119248390047379" value="Update about phone removed from user" />
+          <property name="content" nameId="tsp6.773119248390047379" value="Update about contact record removed from user" />
         </node>
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502028888" nodeInfo="ng">
           <property name="description" nameId="tsp6.773119248390080030" value="user's id" />
           <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502012699" resolveInfo="uid" />
         </node>
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502028896" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="removed phone id" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502012706" resolveInfo="phoneId" />
+          <property name="description" nameId="tsp6.773119248390080030" value="removed contact record id" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502012706" resolveInfo="contactId" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502012699" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
@@ -1040,7 +1025,7 @@
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502012706" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="2" />
-          <property name="name" nameId="tpck.1169194664001" value="phoneId" />
+          <property name="name" nameId="tpck.1169194664001" value="contactId" />
           <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502091252" nodeInfo="ng" />
         </node>
         <node role="header" roleId="tsp6.4689615199750927382" type="tsp6.HeaderKey" typeId="tsp6.4689615199750888590" id="1769186940502012572" nodeInfo="ng">
@@ -1048,21 +1033,21 @@
         </node>
       </node>
       <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Update" typeId="tsp6.4689615199751283321" id="1769186940502014682" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="PhoneTitleChanged" />
+        <property name="name" nameId="tpck.1169194664001" value="ContactTitleChanged" />
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocComment" typeId="tsp6.773119248390047284" id="1769186940502030776" nodeInfo="ng">
-          <property name="content" nameId="tsp6.773119248390047379" value="Update about phone title changed" />
+          <property name="content" nameId="tsp6.773119248390047379" value="Update about contact record title changed" />
         </node>
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502030790" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="phone number" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502014823" resolveInfo="phoneId" />
+          <property name="description" nameId="tsp6.773119248390080030" value="contact record id" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502014823" resolveInfo="contactId" />
         </node>
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502030800" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="new title for phone" />
+          <property name="description" nameId="tsp6.773119248390080030" value="new title for contact record" />
           <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502014832" resolveInfo="title" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502014823" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="2" />
-          <property name="name" nameId="tpck.1169194664001" value="phoneId" />
+          <property name="name" nameId="tpck.1169194664001" value="contactId" />
           <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502095055" nodeInfo="ng" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502014832" nodeInfo="ng">
@@ -1075,22 +1060,31 @@
         </node>
       </node>
       <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Update" typeId="tsp6.4689615199751283321" id="1769186940502126275" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="PhoneMoved" />
+        <property name="name" nameId="tpck.1169194664001" value="ContactMoved" />
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocComment" typeId="tsp6.773119248390047284" id="1769186940502130748" nodeInfo="ng">
-          <property name="content" nameId="tsp6.773119248390047379" value="Update about phone move" />
+          <property name="content" nameId="tsp6.773119248390047379" value="Update about contact record move" />
         </node>
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502130754" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="Phone number id" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502126475" resolveInfo="phoneId" />
+          <property name="description" nameId="tsp6.773119248390080030" value="Contact record id" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502126475" resolveInfo="contactId" />
+        </node>
+        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="255031709445672761" nodeInfo="ng">
+          <property name="description" nameId="tsp6.773119248390080030" value="Old uid for contact record" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="255031709445670817" resolveInfo="oldUid" />
         </node>
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502130762" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="new uid for phone" />
+          <property name="description" nameId="tsp6.773119248390080030" value="new uid for contact record" />
           <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502126482" resolveInfo="uid" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502126475" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
-          <property name="name" nameId="tpck.1169194664001" value="phoneId" />
+          <property name="name" nameId="tpck.1169194664001" value="contactId" />
           <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502126479" nodeInfo="ng" />
+        </node>
+        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="255031709445670817" nodeInfo="ng">
+          <property name="id" nameId="tsp6.2348480312264746197" value="3" />
+          <property name="name" nameId="tpck.1169194664001" value="oldUid" />
+          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="255031709445670825" nodeInfo="ng" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502126482" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="2" />
@@ -1099,114 +1093,6 @@
         </node>
         <node role="header" roleId="tsp6.4689615199750927382" type="tsp6.HeaderKey" typeId="tsp6.4689615199750888590" id="1769186940502126276" nodeInfo="ng">
           <property name="hexValue" nameId="tsp6.4689615199750888593" value="65" />
-        </node>
-      </node>
-      <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Update" typeId="tsp6.4689615199751283321" id="1769186940502016826" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="UserEmailAdded" />
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocComment" typeId="tsp6.773119248390047284" id="1769186940502032685" nodeInfo="ng">
-          <property name="content" nameId="tsp6.773119248390047379" value="Update about email added to user" />
-        </node>
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502032691" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="user's id" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502016968" resolveInfo="uid" />
-        </node>
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502032699" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="added email id" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502016975" resolveInfo="emailId" />
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502016968" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="1" />
-          <property name="name" nameId="tpck.1169194664001" value="uid" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502016972" nodeInfo="ng" />
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502016975" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="2" />
-          <property name="name" nameId="tpck.1169194664001" value="emailId" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502096958" nodeInfo="ng" />
-        </node>
-        <node role="header" roleId="tsp6.4689615199750927382" type="tsp6.HeaderKey" typeId="tsp6.4689615199750888590" id="1769186940502016827" nodeInfo="ng">
-          <property name="hexValue" nameId="tsp6.4689615199750888593" value="60" />
-        </node>
-      </node>
-      <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Update" typeId="tsp6.4689615199751283321" id="1769186940502017142" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="UserEmailRemoved" />
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocComment" typeId="tsp6.773119248390047284" id="1769186940502038365" nodeInfo="ng">
-          <property name="content" nameId="tsp6.773119248390047379" value="Update about email removed from user" />
-        </node>
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502038371" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="user's id" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502017292" resolveInfo="uid" />
-        </node>
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502040262" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="removed email id" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502017299" resolveInfo="emailId" />
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502017292" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="1" />
-          <property name="name" nameId="tpck.1169194664001" value="uid" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502017296" nodeInfo="ng" />
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502017299" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="2" />
-          <property name="name" nameId="tpck.1169194664001" value="emailId" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502098865" nodeInfo="ng" />
-        </node>
-        <node role="header" roleId="tsp6.4689615199750927382" type="tsp6.HeaderKey" typeId="tsp6.4689615199750888590" id="1769186940502017143" nodeInfo="ng">
-          <property name="hexValue" nameId="tsp6.4689615199750888593" value="61" />
-        </node>
-      </node>
-      <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Update" typeId="tsp6.4689615199751283321" id="1769186940502019325" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="EmailTitleChanged" />
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocComment" typeId="tsp6.773119248390047284" id="1769186940502042153" nodeInfo="ng">
-          <property name="content" nameId="tsp6.773119248390047379" value="Update about email title changed" />
-        </node>
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502042167" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="email id" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502019488" resolveInfo="emailId" />
-        </node>
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502042177" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="new title for email" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502019497" resolveInfo="title" />
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502019488" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="1" />
-          <property name="name" nameId="tpck.1169194664001" value="emailId" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502100765" nodeInfo="ng" />
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502019497" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="title" />
-          <property name="id" nameId="tsp6.2348480312264746197" value="2" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.String" typeId="tsp6.2348480312264231195" id="1769186940502019505" nodeInfo="ng" />
-        </node>
-        <node role="header" roleId="tsp6.4689615199750927382" type="tsp6.HeaderKey" typeId="tsp6.4689615199750888590" id="1769186940502019326" nodeInfo="ng">
-          <property name="hexValue" nameId="tsp6.4689615199750888593" value="62" />
-        </node>
-      </node>
-      <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Update" typeId="tsp6.4689615199751283321" id="1769186940502128606" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="EmailMoved" />
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocComment" typeId="tsp6.773119248390047284" id="1769186940502130777" nodeInfo="ng">
-          <property name="content" nameId="tsp6.773119248390047379" value="Update about email move from one user to another" />
-        </node>
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502130783" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="Email id" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502128812" resolveInfo="emailId" />
-        </node>
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940502130791" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="new uid for email" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502128819" resolveInfo="uid" />
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502128812" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="1" />
-          <property name="name" nameId="tpck.1169194664001" value="emailId" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502128816" nodeInfo="ng" />
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502128819" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="2" />
-          <property name="name" nameId="tpck.1169194664001" value="uid" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502128825" nodeInfo="ng" />
-        </node>
-        <node role="header" roleId="tsp6.4689615199750927382" type="tsp6.HeaderKey" typeId="tsp6.4689615199750888590" id="1769186940502128607" nodeInfo="ng">
-          <property name="hexValue" nameId="tsp6.4689615199750888593" value="66" />
         </node>
       </node>
       <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.Update" typeId="tsp6.4689615199751283321" id="1769186940501819688" nodeInfo="ng">
@@ -1219,12 +1105,8 @@
           <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940501819792" resolveInfo="uid" />
         </node>
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940501823444" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="new phones list" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940501819799" resolveInfo="phones" />
-        </node>
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="1769186940501823454" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="new emails list" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940501819814" resolveInfo="emails" />
+          <property name="description" nameId="tsp6.773119248390080030" value="new contacts list" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940501819799" resolveInfo="contacts" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940501819792" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
@@ -1233,16 +1115,9 @@
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940501819799" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="2" />
-          <property name="name" nameId="tpck.1169194664001" value="phones" />
+          <property name="name" nameId="tpck.1169194664001" value="contacts" />
           <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.List" typeId="tsp6.2348480312264232754" id="1769186940501819805" nodeInfo="ng">
             <node role="type" roleId="tsp6.803735062395365470" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502102665" nodeInfo="ng" />
-          </node>
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940501819814" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="3" />
-          <property name="name" nameId="tpck.1169194664001" value="emails" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.List" typeId="tsp6.2348480312264232754" id="1769186940501819823" nodeInfo="ng">
-            <node role="type" roleId="tsp6.803735062395365470" type="tsp6.Int32" typeId="tsp6.2348480312264231180" id="1769186940502102668" nodeInfo="ng" />
           </node>
         </node>
         <node role="header" roleId="tsp6.4689615199750927382" type="tsp6.HeaderKey" typeId="tsp6.4689615199750888590" id="1769186940501819689" nodeInfo="ng">
@@ -5409,19 +5284,10 @@
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502104568" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="7" />
-          <property name="name" nameId="tpck.1169194664001" value="phones" />
+          <property name="name" nameId="tpck.1169194664001" value="contacts" />
           <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.List" typeId="tsp6.2348480312264232754" id="1769186940502104586" nodeInfo="ng">
-            <node role="type" roleId="tsp6.803735062395365470" type="tsp6.StructType" typeId="tsp6.2348480312264233334" id="1769186940502104592" nodeInfo="ng">
-              <link role="struct" roleId="tsp6.2348480312264233348" targetNodeId="1769186940501808347" resolveInfo="Phone" />
-            </node>
-          </node>
-        </node>
-        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502104595" nodeInfo="ng">
-          <property name="id" nameId="tsp6.2348480312264746197" value="8" />
-          <property name="name" nameId="tpck.1169194664001" value="emails" />
-          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.List" typeId="tsp6.2348480312264232754" id="1769186940502104616" nodeInfo="ng">
-            <node role="type" roleId="tsp6.803735062395365470" type="tsp6.StructType" typeId="tsp6.2348480312264233334" id="1769186940502104622" nodeInfo="ng">
-              <link role="struct" roleId="tsp6.2348480312264233348" targetNodeId="1769186940501814037" resolveInfo="Email" />
+            <node role="type" roleId="tsp6.803735062395365470" type="tsp6.StructType" typeId="tsp6.2348480312264233334" id="255031709445678898" nodeInfo="ng">
+              <link role="struct" roleId="tsp6.2348480312264233348" targetNodeId="255031709445643808" resolveInfo="ContactRecord" />
             </node>
           </node>
         </node>
@@ -5454,6 +5320,10 @@
         <node role="docs" roleId="tsp6.773119248390108862" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="9129043485265060685" nodeInfo="ng">
           <property name="description" nameId="tsp6.773119248390080030" value="Groups that are referenced in update" />
           <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="803735062395699798" resolveInfo="groups" />
+        </node>
+        <node role="docs" roleId="tsp6.773119248390108862" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="255031709445682788" nodeInfo="ng">
+          <property name="description" nameId="tsp6.773119248390080030" value="Contact records that are referenced in update" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="1769186940502104568" resolveInfo="contacts" />
         </node>
       </node>
       <node role="definitions" roleId="tsp6.2348480312264233405" type="tsp6.UpdateBox" typeId="tsp6.803735062395648228" id="803735062395703075" nodeInfo="ng">
@@ -5591,19 +5461,10 @@
           </node>
           <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502106528" nodeInfo="ng">
             <property name="id" nameId="tsp6.2348480312264746197" value="7" />
-            <property name="name" nameId="tpck.1169194664001" value="phones" />
+            <property name="name" nameId="tpck.1169194664001" value="contacts" />
             <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.List" typeId="tsp6.2348480312264232754" id="1769186940502106547" nodeInfo="ng">
-              <node role="type" roleId="tsp6.803735062395365470" type="tsp6.StructType" typeId="tsp6.2348480312264233334" id="1769186940502106553" nodeInfo="ng">
-                <link role="struct" roleId="tsp6.2348480312264233348" targetNodeId="1769186940501808347" resolveInfo="Phone" />
-              </node>
-            </node>
-          </node>
-          <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940502106556" nodeInfo="ng">
-            <property name="id" nameId="tsp6.2348480312264746197" value="8" />
-            <property name="name" nameId="tpck.1169194664001" value="emails" />
-            <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.List" typeId="tsp6.2348480312264232754" id="1769186940502106578" nodeInfo="ng">
-              <node role="type" roleId="tsp6.803735062395365470" type="tsp6.StructType" typeId="tsp6.2348480312264233334" id="1769186940502106584" nodeInfo="ng">
-                <link role="struct" roleId="tsp6.2348480312264233348" targetNodeId="1769186940501814037" resolveInfo="Email" />
+              <node role="type" roleId="tsp6.803735062395365470" type="tsp6.StructType" typeId="tsp6.2348480312264233334" id="255031709445684746" nodeInfo="ng">
+                <link role="struct" roleId="tsp6.2348480312264233348" targetNodeId="255031709445643808" resolveInfo="ContactRecord" />
               </node>
             </node>
           </node>

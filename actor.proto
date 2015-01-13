@@ -184,37 +184,35 @@ enum UserState {
     DELETED = 3;
 }
 
-// Extendend phone information
-// phone  Phone number in international format
-// phoneTitle  Title of phone
-message Phone {
-    required int32 id = 1;
-    required int64 accessHash = 2;
-    required int64 phone = 3;
-    required string phoneTitle = 4;
+enum RecordType {
+    PHONE = 1;
+    EMAIL = 2;
 }
 
-// Extendend email information
-// email  Email
-// emailTitle  Descruption of email
-message Email {
+// Contact information of user
+// id Unique id of record
+// accessHash Access hash of record
+// recordType Type of record
+// record Record data
+// title Record title
+message ContactRecord {
     required int32 id = 1;
     required int64 accessHash = 2;
-    required string email = 3;
-    required string emailTitle = 4;
+    required RecordType recordType = 3;
+    required string record = 4;
+    required string title = 5;
 }
 
 // Main user object
-// id  uid
-// accessHash  user's access hash
-// name  user's name
-// localName  user's local name
-// sex  optional sex of user
-// keyHashes  key hashes of user
-// phone  [DEPRECATED] Phone number of user
-// avatar  avatar of user
-// phones  phones of user
-// emails  emails of user
+// id uid
+// accessHash user's access hash
+// name user's name
+// localName user's local name
+// sex optional sex of user
+// keyHashes key hashes of user
+// phone [DEPRECATED] Phone number of user
+// avatar avatar of user
+// contacts contacts of user
 message User {
     required int32 id = 1;
     required int64 accessHash = 2;
@@ -224,8 +222,7 @@ message User {
     repeated int64 keyHashes = 6;
     required int64 phone = 7;
     optional Avatar avatar = 8;
-    repeated int32 phones = 9;
-    repeated int32 emails = 10;
+    repeated int32 contacts = 9;
     required UserState userState = 11;
 }
 
@@ -269,92 +266,56 @@ message UpdateUserLocalNameChanged {
 }
 
 // API#0x57
-// Update about phone added to user
-// uid  user's id
-// phoneId  added phone id
-message UpdateUserPhoneAdded {
+// Update about contact record added to user
+// uid user's id
+// contactId added contact record id
+message UpdateUserContactAdded {
     required int32 uid = 1;
-    required int32 phoneId = 2;
+    required int32 contactId = 2;
 }
 
 // API#0x58
-// Update about phone removed from user
-// uid  user's id
-// phoneId  removed phone id
-message UpdateUserPhoneRemoved {
+// Update about contact record removed from user
+// uid user's id
+// contactId removed contact record id
+message UpdateUserContactRemoved {
     required int32 uid = 1;
-    required int32 phoneId = 2;
+    required int32 contactId = 2;
 }
 
 // API#0x59
-// Update about phone title changed
-// phoneId  phone number
-// title  new title for phone
-message UpdatePhoneTitleChanged {
-    required int32 phoneId = 2;
+// Update about contact record title changed
+// contactId contact record id
+// title new title for contact record
+message UpdateContactTitleChanged {
+    required int32 contactId = 2;
     required string title = 3;
 }
 
 // API#0x65
-// Update about phone move
-// phoneId  Phone number id
-// uid  new uid for phone
-message UpdatePhoneMoved {
-    required int32 phoneId = 1;
-    required int32 uid = 2;
-}
-
-// API#0x60
-// Update about email added to user
-// uid  user's id
-// emailId  added email id
-message UpdateUserEmailAdded {
-    required int32 uid = 1;
-    required int32 emailId = 2;
-}
-
-// API#0x61
-// Update about email removed from user
-// uid  user's id
-// emailId  removed email id
-message UpdateUserEmailRemoved {
-    required int32 uid = 1;
-    required int32 emailId = 2;
-}
-
-// API#0x62
-// Update about email title changed
-// emailId  email id
-// title  new title for email
-message UpdateEmailTitleChanged {
-    required int32 emailId = 1;
-    required string title = 2;
-}
-
-// API#0x66
-// Update about email move from one user to another
-// emailId  Email id
-// uid  new uid for email
-message UpdateEmailMoved {
-    required int32 emailId = 1;
+// Update about contact record move
+// contactId Contact record id
+// oldUid Old uid for contact record
+// uid new uid for contact record
+message UpdateContactMoved {
+    required int32 contactId = 1;
+    required int32 oldUid = 3;
     required int32 uid = 2;
 }
 
 // API#0x56
 // Update about contact information change
-// uid  user's uid
-// phones  new phones list
-// emails  new emails list
+// uid user's uid
+// contacts new contacts list
 message UpdateUserContactsChanged {
     required int32 uid = 1;
-    repeated int32 phones = 2;
-    repeated int32 emails = 3;
+    repeated int32 contacts = 2;
 }
 
 // API#0x64
 // Update about user state changed
-// uid  user's id
-// state  new user state
+// uid user's id
+// state new user state
 message UpdateUserStateChanged {
     required int32 uid = 1;
     required UserState state = 2;
@@ -394,23 +355,18 @@ message RequestRemoveAvatar {
 }
 
 // API#0x78
-// ResponseSendEmailCode
+// ResponseVoid
 // Sending activation code to email
-// emailEmail for attaching to account
+// email Email for attaching to account
 message RequestSendEmailCode {
     required string email = 1;
     optional string description = 2;
 }
 
-// API#0x79
-message ResponseSendEmailCode {
-    required string codeHash = 1;
-}
-
 // API#0x7B
 // ResponseSeq
 // Detaching email from account
-// emailEmail id for deattach
+// email Email id for deattach
 message RequestDetachEmail {
     required int32 email = 1;
     required int64 accessHash = 2;
@@ -419,8 +375,8 @@ message RequestDetachEmail {
 // API#0x7C
 // ResponseSeq
 // Change phone description
-// phoneIdPhone number id
-// titleNew phone title
+// phoneId Phone number id
+// title New phone title
 message RequestChangePhoneTitle {
     required int32 phoneId = 1;
     required string title = 2;
@@ -429,8 +385,8 @@ message RequestChangePhoneTitle {
 // API#0x7D
 // ResponseSeq
 // Change email description
-// emailIdEmail id
-// titleNew email title
+// emailId Email id
+// title New email title
 message RequestChangeEmailTitle {
     required int32 emailId = 1;
     required string title = 2;
@@ -549,8 +505,8 @@ message UpdateContactRegistered {
 
 // API#0x78
 // Update about email contact registered
-// emailId  Email id
-// uid  Registered user's id
+// emailId Email id
+// uid Registered user's id
 message UpdateEmailContactRegistered {
     required int32 emailId = 1;
     required int32 uid = 2;
@@ -1592,6 +1548,7 @@ message UpdateSeqUpdate {
 // update The update
 // users Users that are referenced in update
 // groups Groups that are referenced in update
+// contacts Contact records that are referenced in update
 message UpdateFatSeqUpdate {
     required int32 seq = 1;
     required bytes state = 2;
@@ -1599,8 +1556,7 @@ message UpdateFatSeqUpdate {
     required bytes update = 4;
     repeated User users = 5;
     repeated Group groups = 6;
-    repeated Phone phones = 7;
-    repeated Email emails = 8;
+    repeated ContactRecord contacts = 7;
 }
 
 // API#0x1A
@@ -1647,8 +1603,7 @@ message ResponseGetDifference {
     required bytes state = 2;
     repeated User users = 3;
     repeated Group groups = 6;
-    repeated Phone phones = 7;
-    repeated Email emails = 8;
+    repeated ContactRecord contacts = 7;
     repeated DifferenceUpdate updates = 4;
     required bool needMore = 5;
 }
