@@ -197,6 +197,10 @@
           <property name="description" nameId="tsp6.773119248390080030" value="Current config of server" />
           <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="803735062395514647" resolveInfo="config" />
         </node>
+        <node role="docs" roleId="tsp6.773119248390109922" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="255031709445692633" nodeInfo="ng">
+          <property name="description" nameId="tsp6.773119248390080030" value="Contact records of user" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="255031709445692608" resolveInfo="contacts" />
+        </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="803735062395514631" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
           <property name="name" nameId="tpck.1169194664001" value="publicKeyHash" />
@@ -207,6 +211,15 @@
           <property name="name" nameId="tpck.1169194664001" value="user" />
           <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.StructType" typeId="tsp6.2348480312264233334" id="803735062395514644" nodeInfo="ng">
             <link role="struct" roleId="tsp6.2348480312264233348" targetNodeId="803735062395368173" resolveInfo="User" />
+          </node>
+        </node>
+        <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="255031709445692608" nodeInfo="ng">
+          <property name="id" nameId="tsp6.2348480312264746197" value="4" />
+          <property name="name" nameId="tpck.1169194664001" value="contacts" />
+          <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.List" typeId="tsp6.2348480312264232754" id="255031709445692618" nodeInfo="ng">
+            <node role="type" roleId="tsp6.803735062395365470" type="tsp6.StructType" typeId="tsp6.2348480312264233334" id="255031709445692624" nodeInfo="ng">
+              <link role="struct" roleId="tsp6.2348480312264233348" targetNodeId="255031709445643808" resolveInfo="ContactRecord" />
+            </node>
           </node>
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="803735062395514647" nodeInfo="ng">

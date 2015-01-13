@@ -53,9 +53,11 @@ message RequestSendAuthCall {
 // publicKeyHash Public Key Hash of current authentication
 // user The authenticated User
 // config Current config of server
+// contacts Contact records of user
 message ResponseAuth {
     required int64 publicKeyHash = 1;
     required User user = 2;
+    repeated ContactRecord contacts = 4;
     required Config config = 3;
 }
 

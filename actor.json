@@ -171,6 +171,11 @@
                 "type": "reference",
                 "argument": "config",
                 "description": "  Current config of server"
+              },
+              {
+                "type": "reference",
+                "argument": "contacts",
+                "description": "  Contact records of user"
               }
             ],
             "attributes": [
@@ -186,6 +191,17 @@
                 },
                 "id": 2,
                 "name": "user"
+              },
+              {
+                "type": {
+                  "type": "list",
+                  "childType": {
+                    "type": "struct",
+                    "childType": "ContactRecord"
+                  }
+                },
+                "id": 4,
+                "name": "contacts"
               },
               {
                 "type": {
