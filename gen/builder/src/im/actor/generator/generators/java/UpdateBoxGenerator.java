@@ -20,6 +20,8 @@ public class UpdateBoxGenerator {
             String javaName = JavaConfig.getUpdateBoxName(u.getName());
             FileGenerator generator = new FileGenerator(destFolder + "/" + javaName + ".java");
             generator.appendLn("package " + JavaConfig.PACKAGE + ".base;");
+            generator.appendLn(JavaConfig.NOTICE);
+            generator.appendLn();
             for (String im : JavaConfig.IMPORTS) {
                 generator.appendLn("import " + im + ";");
             }

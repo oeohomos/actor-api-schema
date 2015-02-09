@@ -19,6 +19,8 @@ public class UpdateGenerator {
             String javaName = JavaConfig.getUpdateName(u);
             FileGenerator generator = new FileGenerator(destFolder + "/" + javaName + ".java");
             generator.appendLn("package " + JavaConfig.PACKAGE + ".updates;");
+            generator.appendLn(JavaConfig.NOTICE);
+            generator.appendLn();
             for (String im : JavaConfig.IMPORTS) {
                 generator.appendLn("import " + im + ";");
             }
@@ -70,6 +72,8 @@ public class UpdateGenerator {
         new File(destFolder).mkdirs();
         FileGenerator generator = new FileGenerator(destFolder + "/UpdatesParser.java");
         generator.appendLn("package " + JavaConfig.PACKAGE + ".parser;");
+        generator.appendLn(JavaConfig.NOTICE);
+        generator.appendLn();
         for (String im : JavaConfig.IMPORTS) {
             generator.appendLn("import " + im + ";");
         }

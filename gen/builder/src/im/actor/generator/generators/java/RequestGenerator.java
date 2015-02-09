@@ -26,6 +26,8 @@ public class RequestGenerator {
 
             FileGenerator generator = new FileGenerator(destFolder + "/" + javaName + ".java");
             generator.appendLn("package " + JavaConfig.PACKAGE + ".rpc;");
+            generator.appendLn(JavaConfig.NOTICE);
+            generator.appendLn();
             for (String im : JavaConfig.IMPORTS) {
                 generator.appendLn("import " + im + ";");
             }
@@ -81,6 +83,8 @@ public class RequestGenerator {
             }
             FileGenerator generator = new FileGenerator(destFolder + "/" + javaName + ".java");
             generator.appendLn("package " + JavaConfig.PACKAGE + ".rpc;");
+            generator.appendLn(JavaConfig.NOTICE);
+            generator.appendLn();
             for (String im : JavaConfig.IMPORTS) {
                 generator.appendLn("import " + im + ";");
             }
@@ -132,6 +136,8 @@ public class RequestGenerator {
         new File(destFolder).mkdirs();
         FileGenerator generator = new FileGenerator(destFolder + "/ApiRequests.java");
         generator.appendLn("package " + JavaConfig.PACKAGE + ";");
+        generator.appendLn(JavaConfig.NOTICE);
+        generator.appendLn();
         for (String im : JavaConfig.IMPORTS) {
             generator.appendLn("import " + im + ";");
         }
@@ -256,6 +262,8 @@ public class RequestGenerator {
         new File(destFolder).mkdirs();
         FileGenerator generator = new FileGenerator(destFolder + "/RpcParser.java");
         generator.appendLn("package " + JavaConfig.PACKAGE + ".parser;");
+        generator.appendLn(JavaConfig.NOTICE);
+        generator.appendLn();
         for (String im : JavaConfig.IMPORTS) {
             generator.appendLn("import " + im + ";");
         }

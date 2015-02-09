@@ -23,6 +23,8 @@ public class StructGenerator {
             String javaName = JavaConfig.getStructName(u.getName());
             FileGenerator generator = new FileGenerator(destFolder + "/" + javaName + ".java");
             generator.appendLn("package " + pkg + ";");
+            generator.appendLn(JavaConfig.NOTICE);
+            generator.appendLn();
             for (String im : JavaConfig.IMPORTS) {
                 generator.appendLn("import " + im + ";");
             }

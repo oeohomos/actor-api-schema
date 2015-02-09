@@ -23,6 +23,8 @@ public class EnumGenerator {
             String javaName = JavaConfig.getEnumName(e.getName());
             FileGenerator generator = new FileGenerator(destFolder + "/" + javaName + ".java");
             generator.appendLn("package " + pkg + ";");
+            generator.appendLn(JavaConfig.NOTICE);
+            generator.appendLn();
             generator.appendLn("import java.io.IOException;");
             generator.appendLn();
             generator.appendLn("public enum " + javaName + " {");
