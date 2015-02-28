@@ -13,12 +13,11 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import jetbrains.mps.nodeEditor.MPSColors;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.nodeEditor.InlineCellProvider;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class RpcDocParameter_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -30,8 +29,19 @@ public class RpcDocParameter_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_atf40r_a");
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_atf40r_a0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_atf40r_b0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_atf40r_c0(editorContext, node));
+    if (renderingCondition_atf40r_a1a(node, editorContext)) {
+      editorCell.addEditorCell(this.createConstant_atf40r_b0(editorContext, node));
+    }
+    if (renderingCondition_atf40r_a2a(node, editorContext)) {
+      editorCell.addEditorCell(this.createConstant_atf40r_c0(editorContext, node));
+    }
+    if (renderingCondition_atf40r_a3a(node, editorContext)) {
+      editorCell.addEditorCell(this.createConstant_atf40r_d0(editorContext, node));
+    }
+    if (renderingCondition_atf40r_a4a(node, editorContext)) {
+      editorCell.addEditorCell(this.createConstant_atf40r_e0(editorContext, node));
+    }
+    editorCell.addEditorCell(this.createProperty_atf40r_f0(editorContext, node));
     return editorCell;
   }
 
@@ -45,65 +55,63 @@ public class RpcDocParameter_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefCell_atf40r_b0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("paramter");
-    provider.setNoTargetText("<no paramter>");
-    EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new RpcDocParameter_Editor._Inline_atf40r_a1a());
-    editorCell = provider.createEditorCell(editorContext);
-    if (editorCell.getRole() == null) {
-      editorCell.setReferenceCell(true);
-      editorCell.setRole("paramter");
-    }
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      IOperationContext opContext = editorContext.getOperationContext();
-      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-    } else
+  private EditorCell createConstant_atf40r_b0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "hidden");
+    editorCell.setCellId("Constant_atf40r_b0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_GREEN));
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
     return editorCell;
   }
 
-  public static class _Inline_atf40r_a1a extends InlineCellProvider {
-    public _Inline_atf40r_a1a() {
-      super();
-    }
-
-    public EditorCell createEditorCell(EditorContext editorContext) {
-      return this.createEditorCell(editorContext, this.getSNode());
-    }
-
-    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_atf40r_a0b0(editorContext, node);
-    }
-
-    private EditorCell createProperty_atf40r_a0b0(EditorContext editorContext, SNode node) {
-      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-      provider.setRole("name");
-      provider.setNoTargetText("<no name>");
-      provider.setReadOnly(true);
-      EditorCell editorCell;
-      editorCell = provider.createEditorCell(editorContext);
-      editorCell.setCellId("property_name");
-      Style style = new StyleImpl();
-      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_GREEN));
-      editorCell.getStyle().putAll(style);
-      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-      SNode attributeConcept = provider.getRoleAttribute();
-      Class attributeKind = provider.getRoleAttributeClass();
-      if (attributeConcept != null) {
-        IOperationContext opContext = editorContext.getOperationContext();
-        EditorManager manager = EditorManager.getInstanceFromContext(opContext);
-        return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-      } else
-      return editorCell;
-    }
+  private static boolean renderingCondition_atf40r_a1a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.hasValue(node, "logLevel", "hidden", "hidden");
   }
 
-  private EditorCell createProperty_atf40r_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_atf40r_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "visible");
+    editorCell.setCellId("Constant_atf40r_c0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_GREEN));
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private static boolean renderingCondition_atf40r_a2a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.hasValue(node, "logLevel", "full", "hidden");
+  }
+
+  private EditorCell createConstant_atf40r_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "compact");
+    editorCell.setCellId("Constant_atf40r_d0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_GREEN));
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private static boolean renderingCondition_atf40r_a3a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.hasValue(node, "logLevel", "compact", "hidden");
+  }
+
+  private EditorCell createConstant_atf40r_e0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "danger");
+    editorCell.setCellId("Constant_atf40r_e0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.red));
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private static boolean renderingCondition_atf40r_a4a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.hasValue(node, "logLevel", "danger", "hidden");
+  }
+
+  private EditorCell createProperty_atf40r_f0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("description");
     provider.setNoTargetText("<no description>");

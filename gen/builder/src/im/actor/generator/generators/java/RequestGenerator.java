@@ -39,7 +39,7 @@ public class RequestGenerator {
             generator.appendLn("public static final int HEADER = 0x" + Integer.toHexString(u.getHeader()) + ";");
             generator.appendLn("public static " + javaName + " fromBytes(byte[] data) throws IOException {");
             generator.increaseDepth();
-            generator.appendLn("return Bser.parse(" + javaName + ".class, data);");
+            generator.appendLn("return Bser.parse(new " + javaName + "(), data);");
             generator.decreaseDepth();
             generator.appendLn("}");
             generator.appendLn();
@@ -96,7 +96,7 @@ public class RequestGenerator {
             generator.appendLn("public static final int HEADER = 0x" + Integer.toHexString(u.getHeader()) + ";");
             generator.appendLn("public static " + javaName + " fromBytes(byte[] data) throws IOException {");
             generator.increaseDepth();
-            generator.appendLn("return Bser.parse(" + javaName + ".class, data);");
+            generator.appendLn("return Bser.parse(new " + javaName + "(), data);");
             generator.decreaseDepth();
             generator.appendLn("}");
             generator.appendLn();

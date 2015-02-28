@@ -21,7 +21,8 @@ public class JavaConfig {
             "com.droidkit.bser.BserWriter",
             "java.io.IOException",
             "im.actor.model.network.parser.*",
-            "java.util.List"
+            "java.util.List",
+            "java.util.ArrayList"
     };
 
     public static String getEnumName(String e) {

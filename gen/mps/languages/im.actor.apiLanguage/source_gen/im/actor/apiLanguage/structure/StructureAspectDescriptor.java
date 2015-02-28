@@ -82,7 +82,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 33:
         return new ConceptDescriptorBuilder("im.actor.apiLanguage.structure.RpcDocComment").super_("im.actor.apiLanguage.structure.RpcDoc").parents("im.actor.apiLanguage.structure.RpcDoc").properties("content").alias("#", "").create();
       case 34:
-        return new ConceptDescriptorBuilder("im.actor.apiLanguage.structure.RpcDocParameter").super_("im.actor.apiLanguage.structure.RpcDoc").parents("im.actor.apiLanguage.structure.RpcDoc").properties("description").references("paramter").alias("param", "").create();
+        return new ConceptDescriptorBuilder("im.actor.apiLanguage.structure.RpcDocParameter").super_("im.actor.apiLanguage.structure.RpcDoc").parents("im.actor.apiLanguage.structure.RpcDoc").properties("description", "logLevel").references("paramter").alias("param", "").create();
       case 35:
         return new ConceptDescriptorBuilder("im.actor.apiLanguage.structure.SectionDoc").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("text").alias("#", "").create();
       case 36:

@@ -107,7 +107,7 @@ public class ContainerGenerator {
             }
         } else if (type instanceof SchemeStructType) {
             generator.appendLn("this." + attributeName + " = values.getObj(" + attributeId + ", " +
-                    JavaConfig.getStructName(((SchemeStructType) type).getType()) + ".class);");
+                    "new " + JavaConfig.getStructName(((SchemeStructType) type).getType()) + "());");
         } else if (type instanceof SchemeEnumType) {
             SchemeEnumType e = (SchemeEnumType) type;
             generator.appendLn("this." + attributeName + " = " + JavaConfig.getEnumName(e.getName()) + ".parse(values.getInt(" + attributeId + "));");
@@ -133,7 +133,7 @@ public class ContainerGenerator {
                 }
             } else if (childType instanceof SchemeStructType) {
                 generator.appendLn("this." + attributeName + " = values.optObj(" + attributeId + ", " +
-                        JavaConfig.getStructName(((SchemeStructType) childType).getType()) + ".class);");
+                        "new " + JavaConfig.getStructName(((SchemeStructType) childType).getType()) + "());");
             } else if (childType instanceof SchemeEnumType) {
                 generator.appendLn("int val_" + attributeName + " = values.getInt(" + attributeId + ", 0);");
                 generator.appendLn("if (val_" + attributeName + " != 0) {");
@@ -168,8 +168,15 @@ public class ContainerGenerator {
                     throw new IOException();
                 }
             } else if (childType instanceof SchemeStructType) {
+                String typeName = JavaConfig.getStructName(((SchemeStructType) childType).getType());
+                generator.appendLn("List<" + typeName + "> _" + attributeName + " = new ArrayList<" + typeName + ">();");
+                generator.appendLn("for (int i = 0; i < values.getRepeatedCount(" + attributeId + "); i ++) {");
+                generator.increaseDepth();
+                generator.appendLn("_" + attributeName + ".add(new " + typeName + "());");
+                generator.decreaseDepth();
+                generator.appendLn("}");
                 generator.appendLn("this." + attributeName + " = values.getRepeatedObj(" + attributeId + ", " +
-                        JavaConfig.getStructName(((SchemeStructType) childType).getType()) + ".class);");
+                        "_" + attributeName + ");");
             } else {
                 throw new IOException();
             }

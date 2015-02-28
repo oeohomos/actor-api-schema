@@ -454,6 +454,10 @@
       <property name="name" nameId="tpck.1169194664001" value="description" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6039136734801306201" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="logLevel" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="6039136734801305722" resolveInfo="LogLevel" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4092665470043358610" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="RpcDoc" />
@@ -558,6 +562,26 @@
       <property name="role" nameId="tpce.1071599776563" value="trait" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="5312209286554516176" resolveInfo="Trait" />
+    </node>
+  </root>
+  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="6039136734801305722" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="LogLevel" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="6039136734801305723" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="hidden" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="hidden" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="6039136734801305734" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="full" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="full" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="6039136734801305743" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="compact" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="compact" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="6039136734801305747" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="danger" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="danger" />
     </node>
   </root>
 </model>

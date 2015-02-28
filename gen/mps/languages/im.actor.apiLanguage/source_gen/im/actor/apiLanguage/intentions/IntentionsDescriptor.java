@@ -13,6 +13,10 @@ public class IntentionsDescriptor extends BaseIntentionsDescriptor {
   }
 
   public void init() {
+    IntentionsManager.getInstance().registerIntentionFactory(new CompactLog_Intention());
+    IntentionsManager.getInstance().registerIntentionFactory(new DangerLog_Intention());
+    IntentionsManager.getInstance().registerIntentionFactory(new HideLog_Intention());
+    IntentionsManager.getInstance().registerIntentionFactory(new ShowFullLog_Intention());
     IntentionsManager.getInstance().registerIntentionFactory(new ToggleImplements_Intention());
   }
 }

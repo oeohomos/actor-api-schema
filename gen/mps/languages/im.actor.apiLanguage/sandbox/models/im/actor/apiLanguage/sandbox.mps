@@ -73,14 +73,17 @@
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="4092665470044666761" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Phone number in international format" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395513520" resolveInfo="phoneNumber" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="4092665470044723274" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Application ID" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="hidden" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395513527" resolveInfo="appId" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="4092665470044725702" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Application API key" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="hidden" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395513536" resolveInfo="apiKey" />
         </node>
         <node role="throws" roleId="tsp6.4092665470043063721" type="tsp6.MethodThrows" typeId="tsp6.4092665470043052969" id="4092665470043212951" nodeInfo="ng">
@@ -129,18 +132,22 @@
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389834425" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Phone number in international format" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395514070" resolveInfo="phoneNumber" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389839289" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Code request hash from RequestAuthCode" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395514077" resolveInfo="smsHash" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389843041" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Application ID" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="hidden" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395514086" resolveInfo="appId" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389845485" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Application API key" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="hidden" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395514097" resolveInfo="apiKey" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="803735062395514070" nodeInfo="ng">
@@ -240,34 +247,42 @@
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389846814" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Phone number in international format" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395514328" resolveInfo="phoneNumber" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389849260" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Code request hash from RequestAuthCode" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395514335" resolveInfo="smsHash" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389857810" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Confirmation code from SMS" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395514344" resolveInfo="smsCode" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389861485" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Device RSA 2048 bit public key in x.509 format" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="compact" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395514355" resolveInfo="publicKey" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389866387" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Hash of device unique id and app bundle id. Used for autologout users when app is reinstalled" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395514368" resolveInfo="deviceHash" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389868849" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Device title like 'Steven's iPhone'" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395514383" resolveInfo="deviceTitle" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389868867" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Application ID" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="hidden" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395514400" resolveInfo="appId" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389868887" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Application API key" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="hidden" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395514419" resolveInfo="appKey" />
         </node>
         <node role="throws" roleId="tsp6.4092665470043063721" type="tsp6.MethodThrows" typeId="tsp6.4092665470043052969" id="4092665470043257656" nodeInfo="ng">
@@ -357,6 +372,7 @@
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389870248" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Phone number in international format" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395515437" resolveInfo="phoneNumber" />
         </node>
         <node role="throws" roleId="tsp6.4092665470043063721" type="tsp6.MethodThrows" typeId="tsp6.4092665470043052969" id="4092665470043260334" nodeInfo="ng">
@@ -442,26 +458,32 @@
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389873945" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Code request hash from RequestAuthCode" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395515444" resolveInfo="smsHash" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389873957" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Confirmation code from SMS" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395515453" resolveInfo="smsCode" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389873971" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="User name" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="full" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395515464" resolveInfo="name" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389875339" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Device RSA 2048 bit public key in x.509 format" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="compact" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395515477" resolveInfo="publicKey" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389875357" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Hash of device unique id and app bundle id. Used for autologout users when app is reinstalled" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395515492" resolveInfo="deviceHash" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389875377" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Device title like 'Steven's iPhone'" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="danger" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395515509" resolveInfo="deviceTitle" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389875431" nodeInfo="ng">
@@ -1271,6 +1293,10 @@
           <property name="description" nameId="tsp6.4092665470043359042" value="Email for attaching to account" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="1769186940501704391" resolveInfo="email" />
         </node>
+        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="6039136734801256979" nodeInfo="ng">
+          <property name="description" nameId="tsp6.4092665470043359042" value="Description of email" />
+          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="1769186940501851875" resolveInfo="description" />
+        </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940501704391" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
           <property name="name" nameId="tpck.1169194664001" value="email" />
@@ -1298,6 +1324,10 @@
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="1769186940501842835" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Email id for deattach" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="1769186940501834234" resolveInfo="email" />
+        </node>
+        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="6039136734801258824" nodeInfo="ng">
+          <property name="description" nameId="tsp6.4092665470043359042" value="Access Hash of email" />
+          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="1769186940502147954" resolveInfo="accessHash" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="1769186940501834234" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
@@ -1664,6 +1694,10 @@
         <property name="name" nameId="tpck.1169194664001" value="SearchContacts" />
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocComment" typeId="tsp6.2861239048480449583" id="773119248389921394" nodeInfo="ng">
           <property name="content" nameId="tsp6.2861239048480459664" value="Searching contacts by user's query" />
+        </node>
+        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="6039136734801133198" nodeInfo="ng">
+          <property name="description" nameId="tsp6.4092665470043359042" value="Search query" />
+          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395554544" resolveInfo="request" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="803735062395554544" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
@@ -3236,13 +3270,13 @@
           <property name="description" nameId="tsp6.4092665470043359042" value="Group's peer" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395602549" resolveInfo="groupPeer" />
         </node>
-        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389943101" nodeInfo="ng">
-          <property name="description" nameId="tsp6.4092665470043359042" value="new group title" />
-          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395602556" resolveInfo="title" />
-        </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="2618451197486690530" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Random Id of operation" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="2618451197486649305" resolveInfo="rid" />
+        </node>
+        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389943101" nodeInfo="ng">
+          <property name="description" nameId="tsp6.4092665470043359042" value="new group title" />
+          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395602556" resolveInfo="title" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="803735062395602549" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
@@ -3279,13 +3313,13 @@
           <property name="description" nameId="tsp6.4092665470043359042" value="Group's peer" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395605060" resolveInfo="groupPeer" />
         </node>
-        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389943122" nodeInfo="ng">
-          <property name="description" nameId="tsp6.4092665470043359042" value="uploaded file for avatar" />
-          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395605067" resolveInfo="fileLocation" />
-        </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="2618451197486690541" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Random Id of operation" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="2618451197486651112" resolveInfo="rid" />
+        </node>
+        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389943122" nodeInfo="ng">
+          <property name="description" nameId="tsp6.4092665470043359042" value="uploaded file for avatar" />
+          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395605067" resolveInfo="fileLocation" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="803735062395605060" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
@@ -3386,13 +3420,13 @@
           <property name="description" nameId="tsp6.4092665470043359042" value="Group's peer" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395609157" resolveInfo="groupPeer" />
         </node>
-        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389944560" nodeInfo="ng">
-          <property name="description" nameId="tsp6.4092665470043359042" value="Users for invitation" />
-          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395609164" resolveInfo="user" />
-        </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="2618451197486690561" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Random Id of operation" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="2618451197486654664" resolveInfo="rid" />
+        </node>
+        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389944560" nodeInfo="ng">
+          <property name="description" nameId="tsp6.4092665470043359042" value="Users for invitation" />
+          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395609164" resolveInfo="user" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="803735062395609157" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
@@ -3465,13 +3499,14 @@
           <property name="description" nameId="tsp6.4092665470043359042" value="Group's peer" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395609622" resolveInfo="groupPeer" />
         </node>
-        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389944613" nodeInfo="ng">
-          <property name="description" nameId="tsp6.4092665470043359042" value="users for removing" />
-          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395609629" resolveInfo="user" />
-        </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="2618451197486690590" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="Random Id of operation" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="2618451197486659986" resolveInfo="rid" />
+        </node>
+        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389944613" nodeInfo="ng">
+          <property name="description" nameId="tsp6.4092665470043359042" value="users for removing" />
+          <property name="logLevel" nameId="tsp6.6039136734801306201" value="full" />
+          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395609629" resolveInfo="user" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="803735062395609622" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
@@ -3510,6 +3545,10 @@
           <property name="description" nameId="tsp6.773119248390080030" value="Group Id" />
           <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="803735062395629484" resolveInfo="groupId" />
         </node>
+        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="2618451197486690602" nodeInfo="ng">
+          <property name="description" nameId="tsp6.773119248390080030" value="Random Id of operation" />
+          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="2618451197486577674" resolveInfo="rid" />
+        </node>
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="773119248390890087" nodeInfo="ng">
           <property name="description" nameId="tsp6.773119248390080030" value="Inviter UID. If equals to current uid than group created by user." />
           <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="803735062395629491" resolveInfo="inviteUid" />
@@ -3517,10 +3556,6 @@
         <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="773119248390891675" nodeInfo="ng">
           <property name="description" nameId="tsp6.773119248390080030" value="Date of creating" />
           <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="803735062395629500" resolveInfo="date" />
-        </node>
-        <node role="docs" roleId="tsp6.773119248390107806" type="tsp6.StructDocParameter" typeId="tsp6.773119248390078458" id="2618451197486690602" nodeInfo="ng">
-          <property name="description" nameId="tsp6.773119248390080030" value="Random Id of operation" />
-          <link role="paramter" roleId="tsp6.773119248390080451" targetNodeId="2618451197486577674" resolveInfo="rid" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="803735062395629484" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
@@ -4096,8 +4131,8 @@
           <property name="content" nameId="tsp6.2861239048480459664" value="Loading conversation history" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389950341" nodeInfo="ng">
-          <property name="description" nameId="tsp6.4092665470043359042" value="start date of conversation loading" />
-          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="2861239048481369378" resolveInfo="startDate" />
+          <property name="description" nameId="tsp6.4092665470043359042" value="offset for sort date of required dialogs" />
+          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="2861239048481369378" resolveInfo="dateOffset" />
         </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389957174" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="limit maximum amount of messages (max is 100)" />
@@ -4105,7 +4140,7 @@
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="2861239048481369378" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
-          <property name="name" nameId="tpck.1169194664001" value="startDate" />
+          <property name="name" nameId="tpck.1169194664001" value="dateOffset" />
           <node role="type" roleId="tsp6.2348480312264746167" type="tsp6.AliasType" typeId="tsp6.5312209286553980838" id="2873759689078803261" nodeInfo="ng">
             <link role="alias" roleId="tsp6.5312209286553980954" targetNodeId="2873759689078686265" resolveInfo="date" />
           </node>
@@ -4903,6 +4938,10 @@
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocComment" typeId="tsp6.2861239048480449583" id="773119248389964409" nodeInfo="ng">
           <property name="content" nameId="tsp6.2861239048480459664" value="Uploading part of file" />
         </node>
+        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="6039136734801287951" nodeInfo="ng">
+          <property name="description" nameId="tsp6.4092665470043359042" value="Upload configuration" />
+          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395565955" resolveInfo="config" />
+        </node>
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="773119248389964414" nodeInfo="ng">
           <property name="description" nameId="tsp6.4092665470043359042" value="index of block" />
           <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395565962" resolveInfo="blockIndex" />
@@ -5425,6 +5464,14 @@
         <property name="name" nameId="tpck.1169194664001" value="GetDifference" />
         <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocComment" typeId="tsp6.2861239048480449583" id="773119248389968849" nodeInfo="ng">
           <property name="content" nameId="tsp6.2861239048480459664" value="Getting difference of sequence" />
+        </node>
+        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="6039136734801297635" nodeInfo="ng">
+          <property name="description" nameId="tsp6.4092665470043359042" value="Current client's sequence number" />
+          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395640603" resolveInfo="seq" />
+        </node>
+        <node role="docs" roleId="tsp6.4092665470044220438" type="tsp6.RpcDocParameter" typeId="tsp6.4092665470043293715" id="6039136734801297643" nodeInfo="ng">
+          <property name="description" nameId="tsp6.4092665470043359042" value="Current client's state" />
+          <link role="paramter" roleId="tsp6.4092665470043358846" targetNodeId="803735062395640610" resolveInfo="state" />
         </node>
         <node role="attributes" roleId="tsp6.2348480312265565703" type="tsp6.StructAttribute" typeId="tsp6.2348480312264653219" id="803735062395640603" nodeInfo="ng">
           <property name="id" nameId="tsp6.2348480312264746197" value="1" />
