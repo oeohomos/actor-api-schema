@@ -5663,12 +5663,9 @@
               "header": 19,
               "attributes": [
                 {
-                  "type": {
-                    "type": "struct",
-                    "childType": "UploadConfig"
-                  },
+                  "type": "staring",
                   "id": 1,
-                  "name": "config"
+                  "name": "uploadUrl"
                 }
               ]
             },
@@ -5676,50 +5673,6 @@
               "Starting file upload"
             ],
             "attributes": []
-          }
-        },
-        {
-          "type": "rpc",
-          "content": {
-            "name": "UploadPart",
-            "header": 20,
-            "response": {
-              "type": "reference",
-              "name": "Void"
-            },
-            "doc": [
-              "Uploading part of file",
-              {
-                "type": "reference",
-                "argument": "blockIndex",
-                "description": "index of block"
-              },
-              {
-                "type": "reference",
-                "argument": "payload",
-                "description": "block payload"
-              }
-            ],
-            "attributes": [
-              {
-                "type": {
-                  "type": "struct",
-                  "childType": "UploadConfig"
-                },
-                "id": 1,
-                "name": "config"
-              },
-              {
-                "type": "int32",
-                "id": 2,
-                "name": "blockIndex"
-              },
-              {
-                "type": "bytes",
-                "id": 3,
-                "name": "payload"
-              }
-            ]
           }
         },
         {
@@ -5750,33 +5703,30 @@
               },
               {
                 "type": "reference",
-                "argument": "blocksCount",
-                "description": "blocks count"
+                "argument": "size",
+                "description": "file size"
               },
               {
                 "type": "reference",
-                "argument": "crc32",
-                "description": "crc32 of uploaded file"
+                "argument": "checksum",
+                "description": "sha256 checksum of uploaded file"
               }
             ],
             "attributes": [
               {
-                "type": {
-                  "type": "struct",
-                  "childType": "UploadConfig"
-                },
+                "type": "bytes",
                 "id": 1,
-                "name": "config"
+                "name": "id"
               },
               {
-                "type": "int32",
+                "type": "long",
                 "id": 2,
-                "name": "blocksCount"
+                "name": "size"
               },
               {
-                "type": "int64",
+                "type": "bytes",
                 "id": 3,
-                "name": "crc32"
+                "name": "checksum"
               }
             ]
           }
